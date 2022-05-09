@@ -1,7 +1,7 @@
 let n = +prompt('Enter the number', '');
 
 function f(n) {
-    if (n === 1) return 1;
+    if (n === 1) return 1; // without this string programm is not working
     return n * f(n - 1);
   }
 if (n < 0) {
@@ -10,3 +10,4 @@ if (n < 0) {
     })();
 }
 else console.log(f(n));
+dddd
