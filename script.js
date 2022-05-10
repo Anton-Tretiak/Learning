@@ -1,12 +1,8 @@
-let n = +prompt('Enter the number', '');
+let min = +prompt('Введите начало диапазона', '');
+let max = +prompt('Введите конец диапазона', '');
 
-function f(n) {
-    if (n === 1) return 1; // without this string programm is not workin'
-    return n * f(n - 1);
-  }
-if (n < 0) {
-    (function () {
-        throw new TypeError('Negative number');
-    })();
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-else console.log(f(n));
+
+console.log(getRandom(min, max));
