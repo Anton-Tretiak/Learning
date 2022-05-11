@@ -1,8 +1,9 @@
-let min = +prompt('Введите начало диапазона', '');
-let max = +prompt('Введите конец диапазона', '');
-
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+// метод this
+let obj = {
+    age_1: 18,
+    age_2: 19,
+    sumOfAges: function () {
+        return this.age_1 + this.age_2;
+    }
 }
-
-console.log(getRandom(min, max));
+console.log(obj.sumOfAges());
