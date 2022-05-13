@@ -1,16 +1,19 @@
 let user = {
-    name: 'John',
-    money: 1000,
-
-    toString() {
-        return `{Name: "${this.name}"}`;
-    },
-
-    valueOf() {
-        return this.money; 
-    }      
+    name: "John",
+    age: 30
 };
-
-console.log(user);
-alert(user);
-console.log(Number(user));
+// Проверка пустой ли обьект
+let len = Object.keys(user);
+if (len.length > 0) {
+    console.log('not empty');
+}
+else {
+    console.log('empty');
+}
+// Проверка есть ли свойство 'age' в обьекте user
+if ('age' in user) {
+    console.log('Age is here');
+}
+else {
+    console.log('Age is not here');
+}
