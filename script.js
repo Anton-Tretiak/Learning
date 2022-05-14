@@ -1,19 +1,35 @@
-let user = {
-    name: "John",
-    age: 30
-};
-// Проверка пустой ли обьект
-let len = Object.keys(user);
-if (len.length > 0) {
-    console.log('not empty');
+let user = [
+    {
+      name: "John",
+      age: 30
+    },
+    {
+      name: "Bob",
+      age: 21
+    },
+    {
+      name: "Anna",
+      age: 19
+    }
+];
+
+// Получаем обьект из массива обьектов по заданному параметру
+
+for (let i = 0; i < user.length; i++) {
+    if (user[i].name == 'Bob') {
+        object = user[i];
+        break;
+    }
 }
-else {
-    console.log('empty');
+console.log(object);
+console.log(user);
+
+// Удаляем обьект из массива обьектов если имя = Анна
+
+for (let i = 0; i < user.length; i++) {
+    if (user[i].name == 'Anna') {
+        delete user[i];
+    }
 }
-// Проверка есть ли свойство 'age' в обьекте user
-if ('age' in user) {
-    console.log('Age is here');
-}
-else {
-    console.log('Age is not here');
-}
+console.log(user);
+
