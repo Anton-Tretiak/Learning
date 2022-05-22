@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: rgb(226, 255, 163);
-    height: 20vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,7 @@ header {
 li {
     display: inline;
     font-family: Helvetica;
+    font-size: 3vh;
 }
 ul {
     padding: 0;
@@ -23,7 +24,7 @@ a {
     padding: 10px;
 }
 .second_li {
-    padding: 50px;
+    padding: 5vw;
 }
 
 
@@ -37,7 +38,7 @@ section.first_section {
 .first_section_a{
     font-family: Helvetica, serif;
     font-size: 3vh;
-    padding: 50px;
+    padding: 6vh;
     background-color: rgb(214, 95, 95);
     color: white;
 }
