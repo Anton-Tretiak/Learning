@@ -1,44 +1,27 @@
 body {
     margin: 0;
-}
-
-header {
-    background-color: rgb(226, 255, 163);
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-li {
-    display: inline;
-    font-family: Helvetica;
-    font-size: 3vh;
-}
-ul {
-    padding: 0;
-    margin: 0;
-}
-a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-}
-.second_li {
-    padding: 5vw;
-}
-
-
-section.first_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
     width: 100vw;
 }
-.first_section_a{
-    font-family: Helvetica, serif;
-    font-size: 3vh;
-    padding: 6vh;
-    background-color: rgb(214, 95, 95);
-    color: white;
+.test {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(172, 172, 172);
+    height: 20vh;
+    list-style: none;
+    font-size: 1em;
+
+    display: flex; /* Делаем из блока флекс-контейнер */
+    justify-content: center; /* Выравнивение контента по центру контейнера по горизонтали */
+    align-items: center; /* Выравнивение контента по центру контейнера по вертикали */
+    flex-direction: row; /* Направление блоков внутри контейнера. Row, row-reverse, column, column-reverse */
+}
+.test_li {
+    background-color: rgb(64, 63, 63);
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+}
+a {
+    margin: 1em;
+    text-decoration: none;
 }
