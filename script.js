@@ -1,9 +1,9 @@
-function checkPalindrom (str) {
-    return str == str.split('').reverse().join('');
+let str = 'lana banana';
+
+function capitalize(str) {
+    let arr = str.split('');
+    arr[0] = arr[0].toUpperCase();
+    return arr.join('');
 }
 
-let s = "racecar";
-s = s.replace(/[^a-zA-Z0-9]/g,'');
-s = s.toLowerCase();
-
-console.log(checkPalindrom(s));
+console.log(capitalize(str));
