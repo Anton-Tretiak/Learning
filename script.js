@@ -1,4 +1,4 @@
 let arr = [1,-2,3,-4,5];
-arr.forEach(function(item) {
-    (item < 0) ? console.log(item) : console.log(item * 2);
+arr.forEach((item, index, arr) => {
+    (item > 0) ? console.log(Number(' ' + item), index) : console.log(item, index);
 })
