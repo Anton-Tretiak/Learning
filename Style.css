@@ -1,27 +1,17 @@
-body {
-    margin: 0;
-    width: 100vw;
-}
-.test {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(172, 172, 172);
-    height: 20vh;
-    list-style: none;
-    font-size: 1em;
 
-    display: flex; /* Делаем из блока флекс-контейнер */
-    justify-content: center; /* Выравнивение контента по центру контейнера по горизонтали */
-    align-items: center; /* Выравнивение контента по центру контейнера по вертикали */
-    flex-direction: row; /* Направление блоков внутри контейнера. Row, row-reverse, column, column-reverse */
+body{
+  margin: 0;
+  padding: 0; 
+  height: 2000px; 
 }
-.test_li {
-    background-color: rgb(64, 63, 63);
-    color: #fff;
-    padding: 1em;
-    border-radius: 1em;
+.container{
+  width: 3000px;
+  height: 100vh;
+  background-color: brown;
+  overflow-x: hidden;
 }
-a {
-    margin: 1em;
-    text-decoration: none;
+.first{
+  width: 300px;
+  height: 300px;
+  background-color: #aaa;
 }
